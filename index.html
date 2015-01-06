@@ -1,0 +1,627 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>elisabethgraf.ch</title>
+<link href="css/reset.css" rel="stylesheet" type="text/css" />
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/jquery.fancybox-1.3.4.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="js/jquery.parallax-1.1.js"></script>
+<script type="text/javascript" src="js/parallax-config.js"></script>
+<script type="text/javascript" src="js/jquery.fancybox-1.3.4.pack.js"></script>
+<script type="text/javascript" src="js/FeedEk.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$("a.lightbox").fancybox({
+	'overlayColor'		: '#000',
+	'transitionIn'	: 'elastic',
+	'transitionOut'	: 'elastic',
+	'titlePosition' : 'outside'
+	});
+   $('#divRss').FeedEk({
+   FeedUrl : 'http://blog.elisabethgraf.ch/feeds/posts/default',
+   MaxCount : 5,
+   ShowDesc : false,
+   ShowPubDate:false
+  });
+});
+</script>
+<!-- contact form scripts & configuration, please check js/sendmail.php to set e-mail address & more params -->
+<script type="text/javascript" src="js/jquery.form.js"></script>
+<script type="text/javascript">
+$(document).ready(function() { 
+var options = {target: "#alert"}; 
+$("#contact-form").ajaxForm(options); 
+}); 
+</script>
+<script type="text/javascript" src="js/cufon-yui.js"></script>
+<script type="text/javascript" src="js/cufon-fonts.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
+<!--[if lt IE 9]>
+<script type="text/javascript" src="js/pie.js"></script>
+<script type="text/javascript" src="js/pie-config.js"></script>
+<![endif]-->
+</head>
+
+<body>
+
+    <!-- top -->
+    <div id="top">
+    <div class="set-size">
+    	
+        <h1 id="logo"><a onClick="goToByScroll('home');" >Elisabeth Graf</a></h1>
+        
+        <div id="menu">
+        <ul>
+        	<li class="current"><a onClick="goToByScroll('home');" class="rounded">Home</a></li>
+            <li><a onClick="goToByScroll('about');" class="rounded">Über mich</a></li>
+            <li><a onClick="goToByScroll('folio1');" class="rounded">Galerie</a></li>
+            <li class="disabled"><a onClick="goToByScroll('folio2');" class="rounded">Taschen</a></li>
+            <li><a onClick="goToByScroll('gallery');" class="rounded">Ausstellungen</a></li>
+            <li><a onClick="goToByScroll('kurse');" class="rounded">Kurse</a></li>
+            <li><a onClick="goToByScroll('links');" class="rounded">Links</a></li>
+            <li><a onClick="goToByScroll('contact');" class="rounded">Kontakt</a></li>
+            <li><a href="http://blog.elisabethgraf.ch" target="_blank">Blog</a></li>
+        </ul>
+        </div>
+        
+        <!--<a onClick="goToByScroll('contact');" id="hire"></a>-->
+    
+    <div class="clear"></div>
+    </div>
+    </div>
+    <!-- //top -->
+    <div class="shadow"></div>
+    
+    <!-- navigation -->
+    <div id="nav">
+    	<ul>
+        	<li class="current"><a onClick="goToByScroll('home');" class="rounded"></a></li>
+            <li><a onClick="goToByScroll('about');" class="rounded"></a></li>
+            <li><a onClick="goToByScroll('folio1');" class="rounded"></a></li>
+            <li><a onClick="goToByScroll('folio2');" class="rounded"></a></li>
+            <li><a onClick="goToByScroll('gallery');" class="rounded"></a></li>
+            <li><a onClick="goToByScroll('kurse');" class="rounded"></a></li>
+            <li><a onClick="goToByScroll('links');" class="rounded"></a></li>
+            <li><a onClick="goToByScroll('contact');" class="rounded"></a></li>
+        </ul>
+    </div>
+    <!-- //navigation -->
+    
+    <div class="clear"></div>
+    
+    <!-- container -->
+    <div id="container">
+    
+    <!-- home -->
+    <div id="home" class="section">
+    <div class="overflow">
+    <div class="set-size">
+    	
+        <!-- welcome -->
+        <div class="welcome">
+
+            <h1><strong>Willkommen</strong></h1>
+            <h2><strong>auf meiner Webseite...</strong></h2>
+            
+        <div class="clear"></div>    
+        </div>
+                <!-- column -->
+        <div class="column-540 float-right transparentBackgroundDark">
+            <p>
+                Es freut mich, dass Sie sich für meine textilen Werke interessieren.
+            </p>
+            <h2>Aktuelles:</h2>
+            <div id="divRss">
+	            
+            </div>
+        </div>
+        <!-- //welcome -->
+        
+        <!-- addon -->
+        <div class="addon">
+            <p><a onClick="goToByScroll('about')" id="gonext"></a></p>
+        </div>
+        <!-- //addon -->
+        
+    </div>
+    <!-- parallax elements -->
+    <div class="px pximage1"></div>
+<!--    <div class="px pximage2"></div>
+    <div class="px pximage3"></div>
+    <div class="px pximage4"></div>
+    <div class="px pximage5"></div>-->
+     <!-- //parallax elements -->
+    </div>
+    </div>
+    <!-- //home -->
+    
+    <!-- about -->
+    <div id="about" class="section">
+    <div class="overflow">
+    <div class="set-size">
+    	
+        <!-- header -->
+        <div class="header">
+            
+            <h2><strong>Über mich</strong></h2>
+        
+        <div class="clear"></div>
+        </div>
+        <!-- //header -->
+        
+        <!-- column -->
+        <div class="column-540 float-left">
+        
+            <p>
+                Schon in meiner Jugendzeit habe ich leidenschaftlich gern genäht, viele Jahre lang fast ausschliesslich Kleider. Mein erster Quilt entstand vor etwa 12 Jahren. Die Teilnahme an Kursen verschiedener internationaler Künstlerinnen hat mich angeregt einen eigenen Weg zu suchen. Ich lasse mich gerne vom Zusammenspiel verschiedener Techniken, Stoffen und Farben leiten. Seit Neustem beschäftige ich mich intensiv mit verschiedenen Druckverfahren. Farbe und Muster auf Stoff zu bringen sehe ich als weiteren Schritt meine eigene Kreativität zu erforschen. Ich bin sicher, dass mir die Ideen noch lange nicht ausgehen!
+            </p>
+            
+            <p>
+                Seit 2009 bin ich im Vorstand von patCHquilt, der Vereinigung Schweizer Quilter. Ich bin für die Einträge der Agenda im Bulletin und auf der Website verantwortlich.
+            </p>
+            <p>
+                Familie und Beruf sind ein wichtiger Bestandteil meines Lebens. Ich wohne und arbeite mit meinem Mann in Küttigen, wir führen zusammen einen Kleinbetrieb. Wann immer es geht verbringe ich meine Freizeit gerne mit meinen Enkelkindern.
+            </p>
+        
+        </div>
+        <!-- //column -->
+        
+        <div class="clear"></div>
+        
+        <br /><br /><br /><br />
+        
+        
+    </div>    
+    
+    <!-- parallax elements -->
+    <div class="px pximage"></div>
+    
+    <p >
+        <a onClick="goToByScroll('folio1')" id="gonext"></a>
+    </p>
+    </div>
+    </div>
+    <!-- //about -->
+    
+    
+    <!-- folio1 -->
+    <div id="folio1" class="section">
+    <div class="overflow">
+    <div class="set-size">
+        
+        <!-- header -->
+        <div class="header">
+            
+            <h2><strong>Quilts</strong></h2>
+            <em>Fotos meiner Arbeiten</em>
+        
+        <div class="clear"></div>
+        </div>
+        <!-- //header -->
+        
+        <!-- gallery -->
+        <ul class="gallery">
+            <li><a href="images/Quilts/001.jpg" title="Faszination Farbe 1, nach Manuel Merten | 92 x 92 cm" rel="group3" class="lightbox"><span></span><img src="images/Quilts/small_001.jpg" alt="" /></a></li>
+            <li><a href="images/Quilts/002.jpg" title="Faszination Farbe 2, nach Manuel Merten | 91 x 91 cm" rel="group3" class="lightbox"><span></span><img src="images/Quilts/small_002.jpg" alt="" /></a></li>
+            <li><a href="images/Quilts/003.jpg" title=" Irgendwo ist immer Sommer | 140 x 140 cm" rel="group3" class="lightbox"><span></span><img src="images/Quilts/small_003.jpg" alt="" /></a></li>
+            <li><a href="images/Quilts/004.jpg" title="Schichten in Rot | 108 x 108 cm" rel="group3" class="lightbox"><span></span><img src="images/Quilts/small_004.jpg" alt="" /></a></li>
+            <li><a href="images/Quilts/005.jpg" title="Alles dreht sich ... | 105 x 104 cm" rel="group3" class="lightbox"><span></span><img src="images/Quilts/small_005.jpg" alt="" /></a></li>
+            <li><a href="images/Quilts/006.jpg" title="Wer weiss was uns noch blüht ... | 106 x 106 cm" rel="group3" class="lightbox"><span></span><img src="images/Quilts/small_006.jpg" alt="" /></a></li>
+            <li><a href="images/Quilts/007.jpg" title="Ein langer Weg | 43 x 307 cm" rel="group3" class="lightbox"><span></span><img src="images/Quilts/small_007.jpg" alt="" /></a></li>
+            <li><a href="images/Quilts/008.jpg" title="Auf der andern Seite des Monds | 80 x 120 cm" rel="group3" class="lightbox"><span></span><img src="images/Quilts/small_008.jpg" alt="" /></a></li>
+            <li><a href="images/Quilts/009.jpg" title="Fadengeschichten | 80 x 120 cm" rel="group3" class="lightbox"><span></span><img src="images/Quilts/small_009.jpg" alt="" /></a></li>
+            <li><a href="images/Quilts/010.jpg" title="Ausgefranst | 102 x 100 cm" rel="group3" class="lightbox"><span></span><img src="images/Quilts/small_010.jpg" alt="" /></a></li>
+            <li><a href="images/Quilts/011.jpg" title="Punktefestival | 107 x 107 cm" rel="group3" class="lightbox"><span></span><img src="images/Quilts/small_011.jpg" alt="" /></a></li>
+            <li><a href="images/Quilts/012.jpg" title="Golden Midsummer (Detail) | 15 x 150 cm" rel="group3" class="lightbox"><span></span><img src="images/Quilts/small_012.jpg" alt="" /></a></li>
+        </ul>
+        <!-- //gallery -->
+        
+    </div>
+    <!-- parallax elements -->
+    <div class="px pxphoto-left"></div>
+    <div class="px pxphoto-right"></div>
+    <!-- //parallax elements -->
+     <p >
+         <a onClick="goToByScroll('folio2')" id="gonext"></a>
+    </p>
+    
+    </div>    
+</div>
+    <!-- //folio1 -->
+    
+    <!-- folio2 -->
+<div id="folio2" class="section">
+    <div class="overflow">
+    <div class="set-size">
+        
+        <!-- header -->
+        <div class="header">
+            
+            <h2><strong>Taschen</strong></h2>
+            <em>Fotos meiner Arbeiten</em>
+        
+        <div class="clear"></div>
+        </div>
+        <!-- //header -->
+        
+        <!-- gallery -->
+        <ul class="gallery">
+            <li><a href="images/Taschen/001.jpg" rel="group4" class="lightbox"><span></span><img src="images/Taschen/small_001.jpg" alt="" /></a></li>
+            <li><a href="images/Taschen/002.jpg" rel="group4" class="lightbox"><span></span><img src="images/Taschen/small_002.jpg" alt="" /></a></li>
+            <li><a href="images/Taschen/003.jpg" rel="group4" class="lightbox"><span></span><img src="images/Taschen/small_003.jpg" alt="" /></a></li>
+            <li><a href="images/Taschen/004.jpg" rel="group4" class="lightbox"><span></span><img src="images/Taschen/small_004.jpg" alt="" /></a></li>
+            <li><a href="images/Taschen/005.jpg" rel="group4" class="lightbox"><span></span><img src="images/Taschen/small_005.jpg" alt="" /></a></li>
+            <li><a href="images/Taschen/006.jpg" rel="group4" class="lightbox"><span></span><img src="images/Taschen/small_006.jpg" alt="" /></a></li>
+            <li><a href="images/Taschen/007.jpg" rel="group4" class="lightbox"><span></span><img src="images/Taschen/small_007.jpg" alt="" /></a></li>
+            <li><a href="images/Taschen/008.jpg" rel="group4" class="lightbox"><span></span><img src="images/Taschen/small_008.jpg" alt="" /></a></li>
+        </ul>
+        <!-- //gallery -->
+        
+    </div>
+    <!-- parallax elements -->
+    <div class="px pxphoto-left"></div>
+    <div class="px pxphoto-right"></div>
+    <!-- //parallax elements -->
+     <p >
+         <a onClick="goToByScroll('gallery')" id="gonext"></a>
+    </p>
+    
+    </div>    
+</div>
+    <!-- //folio2 -->
+    
+    
+    <!-- gallery -->
+    <div id="gallery" class="section">
+    <div class="overflow">
+    <div class="set-size">
+    	
+        <!-- header -->
+        <div class="header">
+            
+            <h2 class="yellow-header"><strong>Ausstellungen</strong></h2>
+            <em>2010 - 2012</em>
+        
+        <div class="clear"></div>
+        </div>
+        <!-- //header -->
+        <div id="ausstellungen" class="column-380 float-right transparentBackgroundDark">
+            <ul>
+                <li>2012
+                   <ul class="list orange">
+                   <li><a data-target="1">Kunst im Schloss - Text und Textil</a></li>
+                   <li><a data-target="9">Festival of Quilts Birmingham</a></li>
+                   <li><a data-target="2">World Quilt Competition</a></li>
+                   </ul>
+                </li>
+                <li>2011
+                   <ul class="list orange">
+                   <li><a data-target="10">Textile News: Freiheit . Liberté . Freedom</a></li>
+                   </ul>
+                </li>
+                <li>2010
+                   <ul class="list orange">
+                   <li><a data-target="4">Kunst Quilt Kaktus</a></li>
+                   <li><a data-target="5">World Quilt Competition</a></li>
+                   <li><a data-target="6">Festival of Quilts, Birmingham</a></li>
+                   <li><a data-target="7">Wir sind aus solchem Stoff wie Träume sind</a></li>
+                   <li><a data-target="8">EXNA IV</a></li>
+                   <li><a data-target="11">Natur pur</a></li>
+                   <li><a data-target="12">Open European Quilt Championships</a></li>
+                   </ul>
+                </li>
+            </ul>
+        </div>
+        <div id="a-wrapper">
+	        <div id="a1" class="column-460 float-left transparentBackgroundDark hidden">
+	        	<h4>Ausstellung Kunst im Schloss "Text und Textil"</h4>
+	        	<p>im Schloss, 5023 Biberstein
+	        	Ausstellung von Manuel Merten, Rita Merten und Elisabeth Graf
+zu Bildern von Manuel Merten</p>
+				        <ul class="gallery">
+					        	<li><a href="images/Ausstellungen/Schloss2.jpg" rel="group100" class="lightbox"><span></span><img src="images/Ausstellungen/Schloss2-small.jpg" alt="" /></a></li>
+            			</ul>
+
+	        </div>
+	        <div id="a2" class="column-460 float-left transparentBackgroundDark hidden">
+	        	<h4>World Quilt Competition</h4>
+	        	<p>
+		        	<ul class="list blue">
+			        	<li>Manchester New Hampshire</li>
+			        	<li>Pennsylvania National Quilt Extravaganza</li>
+			        	<li>Pacific International Quilt Festival</li>
+			        	<li>World Quilt Show Florida</li>
+		        	</ul>
+	        	</p>
+	        	
+	        </div>
+		    <div id="a4" class="column-460 float-left transparentBackgroundDark hidden">
+		        <h4>Kunst Quilt Kaktus</h4>
+	        <p>Ausstellung von Elisabeth Graf, Marianne Häni, Rita Merten bei Kakteen Gautschi in Schafisheim. <a onClick="goToByScroll('kaktus');"> Zu den Bildern</a></p>
+	        </div>
+	        <div id="a5" class="column-460 float-left transparentBackgroundDark hidden">
+		        <h4>World Quilt Competition</h4>
+		        <p>Manchester New Hampshire, Pennsylvania National Quilt Extravaganza, Pacific International Quilt Festival, Chicago Quilt Festivals</p>
+	        </div>
+	        <div id="a6" class="column-460 float-left transparentBackgroundDark hidden">
+		        <h4>Festival of Quilts, Birmingham</h4>
+		        <p>EQA Ausstellung "Colour connections"</p>
+	        </div>
+	        <div id="a7" class="column-460 float-left transparentBackgroundDark hidden">
+		        <h4>Wir sind aus solchem Stoff wie Träume sind</h4>
+		        <p>Poetische Dreiteiler<br/>VI. Jurierte Textilkunstausstellung</p>
+		        <img src="images/Ausstellungen/strebel-aarau.jpg" alt="Fahnen Strebel Aarau" title="Fahnen Strebel Aarau"/>
+		        <p>Mein Quilt "Sehnsucht" auf den Flaggen bei Strebel AG  in Aarau.</p>	        
+		    </div>
+	        <div id="a8" class="column-460 float-left transparentBackgroundDark hidden">
+		        <h4>EXNA IV</h4>
+		        <p>Concours suisse, Musée d'art et d'histoire, Neuchâtel</p>
+	        </div>
+	        <div id="a9" class="column-460 float-left transparentBackgroundDark hidden">
+	        	<h4>Festival of Quilts Birmingham</h4>
+	        	<p>
+	        	EQA Ausstellung „CrossRoads“
+	        	</p>
+	        </div>
+	        <div id="a10" class="column-460 float-left transparentBackgroundDark hidden">
+	        	<h4>Textile News: Freiheit . Liberté . Freedom</h4>
+	        	<p>
+		        	4. Internationaler Wettbewerb für Kleinformate
+	        	</p>	        	
+	        </div>
+	        <div id="a11" class="column-460 float-left transparentBackgroundDark hidden">
+		        <h4>Natur pur</h4>
+		        <p>3. Quiltausstellung der ZüriOberlandquilters in Hombrechtikon
+<br/>1. Preis mit meinem Quilt " Herbststimmung am Hasenberg"</p>
+		        <img src="images/Ausstellungen/exna.jpg" alt="EXNA Concours suisse" title="EXNA Concours suisse"/>
+	        </div>
+	        <div id="a12" class="column-460 float-left transparentBackgroundDark hidden">
+	        	<h4>Open European Quilt Championships</h4>
+	        	<p>
+		        	Ausstellung in Veldhofen NL
+	        	</p>	        	
+	        </div>
+
+
+        </div>        
+    </div>
+    <!-- parallax elements -->
+    <!--<div class="px pxphoto-left"></div>
+    <div class="px pxphoto-right"></div>-->
+    <!-- //parallax elements -->
+     <p >
+         <a onClick="goToByScroll('kurse')" id="gonext"></a>
+    </p>
+    
+    </div>
+    </div>
+    <!-- //gallery -->
+
+    <!-- kurse -->
+    <div id="kurse" class="section">
+    <div class="overflow">
+    <div class="set-size">
+        
+        <!-- header -->
+        <div class="header">
+            
+            <h2><strong>Kursprogramm</strong></h2>
+            <em>für Quiltgruppen</em>
+        
+        <div class="clear"></div>
+        </div>
+        <!-- //header -->
+        <div id="kursliste" class="column-380 float-left transparentBackgroundDark">
+            <p>
+            Vielleicht möchten Sie zusammen mit Ihren Kolleginnen einen Art-Quilt nähen, Entfärbe-Experimente wagen oder sogar Papier nähen?
+            </p>
+        <p>
+            Gerne komme ich zu Ihnen und Sie erlernen in einem Tageskurs die entsprechende Technik.
+        </p>
+        <p>
+            Das Kursdatum können Sie, nach Absprache mit mir, selber bestimmen. Zu jedem Kurs erhalten Sie eine detaillierte Materialliste sowie ausführliche Kursunterlagen.
+        </p>
+            <ul>
+                <li><strong>Mein neues Kursprogramm für 2015:</strong>
+                   <ul class="list orange">
+                   <li><a data-target="1">Kleine Quadrate mit grosser Wirkung</a></li>
+                   <li><a data-target="2">Worte sind Spiel, bedeuten sie viel?</a></li>
+                   <li><a data-target="3">Die Blätter fallen</a></li>
+                   </ul>
+                </li>
+            </ul>
+        </div>
+        <div id="a-wrapper-kurse">
+            <div id="a-kurse-1" class="column-460 float-right transparentBackgroundDark hidden">
+                <h4>Tageskurs: Kleine Quadrate mit grosser Wirkung</h4>
+                <p>Dieser Quilt besteht aus vielen kleinen, gefalteten Quadraten. Am Kurstag nähen wir einen
+Miniquilt. Sie können das Gelernte dann zu Hause problemlos in grössere Werke umsetzen.</p>
+            <img src="images/quadrate1.jpg" alt="Quadrate Bild1">
+            <img src="images/quadrate2.jpg" alt="Quadrate Bild2">
+            </div>
+            <div id="a-kurse-2" class="column-460 float-right transparentBackgroundDark hidden">
+                <h4>Tageskurs: Worte sind Spiel, bedeuten sie viel?</h4>
+                <p>
+                    <strong>Wir nähen mit Papier!</strong> Aus alten Magazinen suchen wir interessante Wörter, Buchstaben, Bilder etc. und gestalten daraus kleine Quadrate, diese können dann zu einem Quilt zusammengesetzt werden.
+                </p>
+                
+            <img src="images/papier1.jpg" alt="Papier Bild">
+            </div>
+            <div id="a-kurse-3" class="column-460 float-right transparentBackgroundDark hidden">
+                <h4>Tageskurs: Die Blätter fallen</h4>
+                <p>
+                    In diesem Kurs experimentieren wir mit dem Entfärben von Stoff. Es entstehen dabei überraschende Ergebnisse.
+                </p>
+                
+            <img src="images/blaetter1.jpg" alt="Blätter Bild">
+            </div>
+
+        </div>        
+    </div>
+    <!-- parallax elements -->
+    <!--<div class="px pxphoto-left"></div>
+    <div class="px pxphoto-right"></div>-->
+    <!-- //parallax elements -->
+     <p >
+         <a onClick="goToByScroll('links')" id="gonext"></a>
+    </p>
+    
+    </div>
+    </div>
+    <!-- //kurse -->
+
+    
+    <!-- links -->
+    <div id="links" class="section">
+    <div class="set-size">
+    	
+        <!-- header -->
+        <div class="header">
+            
+            <h2><strong>Links</strong></h2>
+        
+        <div class="clear"></div>
+        </div>
+ 
+        
+       
+        <div id="link-corner" class="column-620 float-left">
+         
+        <p>
+	        <a href="http://www.patchquilt.ch" target="_blank">http://www.patchquilt.ch</a><br/><em>patCHquilt Vereinigung Schweizer Quilter</em>
+        </p>    
+        <p>
+	        <a href="http://www.quiltservice.ch" target="_blank">http://www.quiltservice.ch</a><br/><em>Barbara Heller, Quiltservice, 8196 Wil</em>
+        </p>    
+        <p>
+	        <a href="http://www.ritamerten.ch" target="_blank">http://www.ritamerten.ch</a><br/><em>Atelier für Textilkunst, Sarmenstorf</em>
+        </p>    
+        <p>
+	        <a href="http://www.quiltsundmehr.de" target="_blank">http://www.quiltsundmehr.de</a><br/><em>quiltsundmehr.de</em>
+        </p>    
+         
+        </div>
+       
+        <div class="column-300 float-right">
+        </div>
+        
+        <div class="clear"></div>
+        
+        
+        
+
+        
+      <p >
+         <a onClick="goToByScroll('contact')" id="gonext"></a>
+    </p>   
+        
+    </div>
+    </div>
+    <!-- //links -->
+    
+    <!-- contact -->
+    <div id="contact" class="section">
+    <div class="overflow">
+    <div class="set-size">
+    	
+        <!-- header -->
+        <div class="header">
+            
+            <h2><strong>Kontakt</strong></h2>
+        
+        <div class="clear"></div>
+        </div>
+        <!-- //header -->
+        
+        <!-- column -->
+        <div class="column-540 float-left">
+                    
+            <h4><strong>Map</strong></h4>
+<div id="mapviewer"><iframe id="map" Name="mapFrame" scrolling="no" width="640" height="512" frameborder="0" src="http://www.bing.com/maps/embed/?lvl=18&amp;cp=47.415272~8.049310&amp;sty=r&amp;draggable=true&amp;v=2&amp;dir=0&amp;where1=G%C3%83%C2%A4nsackerstrasse+7%2C+5024+K%C3%83%C2%BCttigen+Aargau%2C+Switzerland&amp;form=LMLTEW&amp;pp=47.4152718~8.0493097&amp;mkt=en-us&amp;gen=false&amp;emid=f859d69a-7fed-e841-5976-ca57844e3499&amp;w=640&amp;h=512"></iframe><div id="LME_maplinks" style="line-height:20px;"><a id="LME_largerMap" href="http://www.bing.com/maps/?cp=47.415272~8.04931&amp;sty=r&amp;lvl=18&amp;where1=Gänsackerstrasse 7, 5024 Küttigen Aargau, Switzerland&amp;mm_embed=map&amp;form=LMLTEW" target="_blank">View Larger Map</a>&nbsp;<a id="LME_directions" href="http://www.bing.com/maps/?cp=47.415272~8.04931&amp;sty=r&amp;lvl=18&amp;rtp=~pos.47.415272_8.04931_Gänsackerstrasse 7, 5024 Küttigen Aargau, Switzerland&amp;mm_embed=dir&amp;form=LMLTEW" target="_blank">Get Directions</a>&nbsp;<a id="LME_birdsEye" href="http://www.bing.com/maps/?cp=rx28qqhp3pyd&amp;sty=b&amp;lvl=18&amp;where1=Gänsackerstrasse 7, 5024 Küttigen Aargau, Switzerland&amp;mm_embed=be&amp;form=LMLTEW" target="_blank">View Bird's Eye</a></div>
+</div>
+            <div class="clear"></div>
+        </div>
+        <!-- //column -->
+        
+        <!-- column -->
+        <div class="column-300 float-right">
+        
+        	<h4><strong>Kontakt</strong></h4>
+            <p><strong>Elisabeth Graf</strong><br/>
+            Gänsackerstrasse 7<br/>
+            5024 Küttigen - Switzerland</p>
+            
+            <ul class="list-icons">
+            <li>
+                <img src="images/icon-phone.png" alt="" />
+                <p>
+                    <strong>PHONE</strong><br />
+                    +41 (62) 827 18 15
+                </p>
+            </li>
+            <li>
+                <img src="images/icon-email.png" alt="" />
+                <p>
+                    <strong>EMAIL</strong><br />
+                    <a href="mailto:elisabeth_graf@bluewin.ch" class="link">elisabeth_graf@bluewin.ch</a>
+                </p>
+            </li>
+            </ul>
+            
+            <br /><br />
+            
+            
+        </div>
+        <!-- //column -->
+  
+    </div>
+    
+    <!-- parallax elements -->
+    <div class="px pxmyspace"></div>
+    <div class="px pxdribbble"></div>
+    <div class="px pxmail"></div>
+    <!-- //parallax elements -->
+    
+    <div class="clear"></div>
+    </div>
+    </div>
+    <!-- //contact -->
+        
+    <div class="clear"></div>
+    </div>
+    <!-- //container -->
+    
+    <div class="clear"></div>
+    
+    <!-- footer -->
+    <div id="footer">
+    <div class="set-size">
+    <a onClick="goToByScroll('home')" id="gotop"></a>
+    	<p>&copy; 2012 Copyright Elisabeth Graf. All Rights Reserved. Webdesign by <a class="link" href="http://www.graf.nom.co/" target="_blank">Oliver Graf</a></p>
+    </div>
+    </div>
+    <!-- //footer -->
+    
+    
+</body>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$('#ausstellungen a').click(function(){
+		    var x = $(this).data('target');
+			$('#a-wrapper').children('div').addClass('hidden');
+			$('#a' + x).removeClass('hidden');
+			
+			//alert($(this).data('target'));
+		});
+        $('#kursliste a').click(function(){
+            var x = $(this).data('target');
+            $('#a-wrapper-kurse').children('div').addClass('hidden');
+            $('#a-kurse-' + x).removeClass('hidden');            
+        });
+	 });
+
+</script>
+</html>
