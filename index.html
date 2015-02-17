@@ -20,12 +20,14 @@ $(document).ready(function(){
 	'transitionOut'	: 'elastic',
 	'titlePosition' : 'outside'
 	});
+/*
    $('#divRss').FeedEk({
    FeedUrl : 'http://blog.elisabethgraf.ch/feeds/posts/default',
    MaxCount : 5,
    ShowDesc : false,
    ShowPubDate:false
   });
+*/
 });
 </script>
 <!-- contact form scripts & configuration, please check js/sendmail.php to set e-mail address & more params -->
@@ -63,7 +65,6 @@ $("#contact-form").ajaxForm(options);
             <li><a onClick="goToByScroll('kurse');" class="rounded">Kurse</a></li>
             <li><a onClick="goToByScroll('links');" class="rounded">Links</a></li>
             <li><a onClick="goToByScroll('contact');" class="rounded">Kontakt</a></li>
-            <li><a href="http://blog.elisabethgraf.ch" target="_blank">Blog</a></li>
         </ul>
         </div>
         
@@ -113,10 +114,12 @@ $("#contact-form").ajaxForm(options);
             <p>
                 Es freut mich, dass Sie sich für meine textilen Werke interessieren.
             </p>
+<!--
             <h2>Aktuelles:</h2>
             <div id="divRss">
-	            
+
             </div>
+-->
         </div>
         <!-- //welcome -->
         
@@ -284,6 +287,19 @@ $("#contact-form").ajaxForm(options);
         <!-- //header -->
         <div id="ausstellungen" class="column-380 float-right transparentBackgroundDark">
             <ul>
+                <li>2014
+                    <ul class="list orange">
+                        <li><a data-target="17">Festival of Quilts Birmingham</a></li>
+                        <li><a data-target="16">Quilt Festival Solothurn und Open European Quilt Championships</a></li>
+                    </ul>
+                </li>
+                <li>2013
+                    <ul class="list orange">
+                        <li><a data-target="15">Textile News: Langeweile. Boredom. Ennui</a></li>
+                        <li><a data-target="14">Festival of Quilts Birmingham</a></li>
+                        <li><a data-target="13">The 12th Quilt Nihon Exhibition, Japan</a></li>
+                    </ul>
+                </li>
                 <li>2012
                    <ul class="list orange">
                    <li><a data-target="1">Kunst im Schloss - Text und Textil</a></li>
@@ -378,6 +394,35 @@ zu Bildern von Manuel Merten</p>
 		        	Ausstellung in Veldhofen NL
 	        	</p>	        	
 	        </div>
+            <div id="a13" class="column-460 float-left transparentBackgroundDark hidden">
+                <h4>The 12th Quilt Nihon Exhibition, Japan</h4>
+                <p>Corporate Award Nihon Vogue Co.
+                    für meinen Quilt  „Life’s crossings“
+                </p>
+                    <img src="images/Ausstellungen/Life_s_crossings.jpg" alt="Life's crossings" title="Life's crossings"/>
+            </div>
+            <div id="a14" class="column-460 float-left transparentBackgroundDark hidden">
+                <h4>Festival of Quilts Birmingham</h4>
+                <p>EQA Ausstellung „Bewegung“</p>
+            </div>
+            <div id="a15" class="column-460 float-left transparentBackgroundDark hidden">
+                <h4>Textile News: Langeweile. Boredom. Ennui</h4>
+                <p>5. Internationaler Wettbewerb für Kleinformate</p>
+            </div>
+            <div id="a16" class="column-460 float-left transparentBackgroundDark hidden">
+                <h4>Quilt Festival Solothurn und Open European Quilt Championships</h4>
+                <p><strong>25 Jahre patCHquilt Wettbewerb „Fadenspannung“</strong>
+                    Mein Werk „Fadegrad“ erhielt die
+                    Auszeichnung „Bemerkenswert“ Die ganze Ausstellung
+                    wurde dann noch in Veldhofen NL gezeigt.
+                    <img src="images/Ausstellungen/fadenspannung.jpg" alt="Fadenspannung" title="Fadenspannung"/>
+                </p>
+            </div>
+            <div id="a17" class="column-460 float-left transparentBackgroundDark hidden">
+                <h4>Festival of Quilts Birmingham</h4>
+                <p>EQA Ausstellung „Garten im Winter“</p>
+                <img src="images/Ausstellungen/gartenimwinter.jpg" alt="gartenimwinter" title="gartenimwinter"/>
+            </div>
 
 
         </div>        
